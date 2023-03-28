@@ -1,0 +1,10 @@
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: simple-quarkus-web-app-repo
+  namespace: assemble-argocd
+  labels:
+    argocd.argoproj.io/secret-type: repository
+stringData:
+  url: https://github.com/rhsummit-backstage-fqfvc/backstage-quarkus-web-app-hpgrahsl-gitops
